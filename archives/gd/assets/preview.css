@@ -1,0 +1,1846 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal .dialog {
+  width: 500px;
+  margin: auto;
+  padding: 0 10px 20px;
+  background-color: #FFF;
+  box-sizing: border-box;
+  border: 1px solid #808080;
+}
+.modal .dialog a {
+  color: #FF461F;
+}
+.modal .dialog .close {
+  float: right;
+  line-height: 30px;
+  margin-top: 5px;
+}
+.modal .dialog .dialog-title {
+  border-bottom: 1px solid #41C7D6;
+  line-height: 40px;
+}
+.modal .dialog .dialog-btns {
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+}
+.modal .dialog .dialog-content {
+  padding: 20px 10px;
+}
+.modal .dialog-profile {
+  width: 650px;
+  height: 440px;
+}
+.modal .dialog-profile .section {
+  margin: 10px 0;
+}
+.modal .dialog-profile .dialog-content {
+  text-align: center;
+}
+.modal .dialog-profile .dialog-content .user-name span {
+  font-size: 18px;
+}
+.modal .dialog-profile .dialog-content .user-info {
+  color: #666;
+  font-size: 12px;
+}
+.modal .dialog-profile .dialog-content button {
+  width: 220px;
+  height: 36px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 30px;
+}
+.modal .dialog-new-project .form section {
+  margin: 20px 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.modal .dialog-new-project .form section .left {
+  width: 80px;
+}
+.modal .dialog-new-project .form section input,
+.modal .dialog-new-project .form section select {
+  outline: none;
+  box-sizing: border-box;
+  height: 24px;
+}
+.modal .dialog-new-project .form section.name input {
+  width: 216px;
+}
+.modal .dialog-new-project .form section.device-type select {
+  width: 216px;
+}
+.modal .dialog-new-project .form section .dimensions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal .dialog-new-project .form section .dimensions .stack input {
+  width: 73px;
+  text-align: right;
+  margin-right: 6px;
+}
+.modal .dialog-new-project .form section .dimensions .stack span {
+  text-align: center;
+  margin-top: 10px;
+}
+.modal .dialog-new-project .form section .dimensions .switch {
+  margin: auto 10px;
+  width: 30px;
+  height: 24px;
+  background-image: url(/imgs/icon/switch_ratio@2x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+}
+.modal .dialog-new-project .form section .dimensions .size-help {
+  margin-left: 10px;
+}
+.modal .dialog-new-project .form section input:disabled,
+.modal .dialog-new-project .form section select:disabled {
+  cursor: not-allowed;
+}
+.modal .app-meta-form section {
+  margin: 20px 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.modal .app-meta-form section .left {
+  width: 80px;
+}
+.modal .app-meta-form section input,
+.modal .app-meta-form section select {
+  outline: none;
+  box-sizing: border-box;
+  height: 24px;
+}
+.modal .app-meta-form section.name input {
+  width: 216px;
+}
+.modal .app-meta-form section.device-type select {
+  width: 216px;
+}
+.modal .app-meta-form section .dimensions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal .app-meta-form section .dimensions .stack input {
+  width: 73px;
+  text-align: right;
+  margin-right: 6px;
+}
+.modal .app-meta-form section .dimensions .stack span {
+  text-align: center;
+  margin-top: 10px;
+}
+.modal .app-meta-form section .dimensions .switch {
+  margin: auto 10px;
+  width: 30px;
+  height: 24px;
+  background-image: url(/imgs/icon/switch_ratio@2x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+}
+.modal .app-meta-form section .dimensions .size-help {
+  margin-left: 10px;
+}
+.modal .app-meta-form section input:disabled,
+.modal .app-meta-form section select:disabled {
+  cursor: not-allowed;
+}
+.modal .dialog-share h3 {
+  margin: 0;
+}
+.modal .dialog-share .content {
+  margin: 10px 0 10px 30px;
+}
+.modal .dialog-share .URL {
+  width: 350px;
+  outline: none;
+  padding: 2px 3px;
+}
+.modal .dialog-share .open-link {
+  margin-left: 10px;
+}
+.modal .dialog-share .download {
+  color: #000;
+}
+.modal .dialog-share .download:hover {
+  color: #FF461F;
+}
+.modal .dialog-upload {
+  height: 380px;
+  width: 520px;
+}
+.modal .dialog-need-upgrade .link {
+  color: #FF461F;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.modal .dialog-mobile-error {
+  width: 300px;
+}
+.modal .dialog-upgrade {
+  width: 650px;
+  height: 440px;
+}
+.modal .dialog-upgrade .dialog-content > p {
+  line-height: 24px;
+}
+.modal .dialog-upgrade .dialog-content .upgrade-form {
+  width: 220px;
+  margin: 20px auto;
+}
+.modal .dialog-upgrade .dialog-content .upgrade-form .upgrade-time {
+  text-align: center;
+}
+.modal .dialog-upgrade .dialog-content .upgrade-form .summary {
+  margin-top: 10px;
+}
+.modal .dialog-upgrade .dialog-content .upgrade-form .summary .total {
+  margin-right: 20px;
+}
+.modal .dialog-upgrade .dialog-content .upgrade-form .summary a {
+  color: #FF461F;
+}
+.modal .dialog-upgrade .dialog-content .upgrade-form .custom-component {
+  margin-right: 30px;
+}
+.modal .dialog-upgrade .dialog-content .upgrade-form .custom-component input {
+  margin-right: 5px;
+}
+.modal .dialog-upgrade .dialog-content .upgrade-submit {
+  text-align: center;
+  margin-top: 20px;
+}
+.modal .dialog-upgrade .dialog-content .upgrade-submit button {
+  width: 220px;
+  height: 36px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.modal .dialog-upgrade.dialog-upgrade-paying {
+  height: 260px;
+}
+.modal .dialog-app-setting .tab {
+  width: 100%;
+  text-align: center;
+}
+.modal .dialog-app-setting .tab span {
+  width: 100px;
+  display: inline-block;
+  padding: 3px 0;
+  border: 1px solid #41C7D6;
+  cursor: pointer;
+}
+.modal .dialog-app-setting .tab span.current {
+  background-color: #41C7D6;
+  color: #FFF;
+}
+.modal .dialog-app-setting .panel {
+  margin: 20px 0;
+  height: 240px;
+}
+.modal .dialog-app-setting .panel.show {
+  display: block;
+}
+.modal .dialog-app-setting .panel.hide {
+  display: none;
+}
+.modal .dialog-app-setting .panel .setting {
+  margin-bottom: 20px;
+}
+.modal .dialog-app-setting .panel .setting .desc {
+  color: #666;
+}
+.modal .dialog-app-setting .panel .setting .label {
+  width: 100px;
+  float: left;
+}
+.modal .dialog-app-setting .panel .setting .option {
+  margin-left: 120px;
+}
+.modal .dialog-app-setting .panel .option label {
+  margin-right: 10px;
+}
+.modal .dialog-app-setting .panel .option label input {
+  margin-right: 3px;
+}
+.modal .dialog-app-setting .panel.panel-preview .setting.app-setting-logo img {
+  outline: 1px solid #41C7D6;
+  float: left;
+}
+.modal .dialog-app-setting .panel.panel-preview .setting.app-setting-logo .right-side {
+  margin-left: 74px;
+}
+.modal .dialog-app-setting .panel.panel-preview .setting.app-setting-logo .right-side .update-logo {
+  width: 50px;
+  height: 24px;
+}
+.modal .dialog-app-setting .panel.panel-preview .setting.app-setting-logo .right-side .logo-description {
+  margin: 5px 0;
+}
+.modal .dialog-app-setting .panel.panel-preview .setting.app-setting-logo:after {
+  clear: left;
+}
+.modal .dialog-app-setting .panel.panel-color .setting-section .setting-section-header {
+  margin-bottom: 10px;
+}
+.modal .dialog-app-setting .panel.panel-color .setting-section .setting {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.modal .dialog-app-setting .panel.panel-color .color-picker span {
+  display: inline-block;
+  width: 28px;
+  height: 14px;
+  border: 2px solid #FFF;
+  box-shadow: 0 0 0 1px #000;
+  box-sizing: border-box;
+}
+.modal .dialog-app-setting .panel.panel-color .color-picker input {
+  width: 80px;
+  outline: none;
+  border: 1px solid #ddd;
+  margin-left: 10px;
+}
+.modal .dialog-app-setting .panel.panel-color .color-picker input:focus {
+  border: 1px solid #41C7D6;
+}
+.modal .dialog-tutorial {
+  height: 560px;
+  width: 760px;
+}
+.modal .dialog-tutorial video {
+  width: 720px;
+  height: 405px;
+}
+.modal .dialog-tutorial iframe {
+  border: none;
+  width: 100%;
+  height: 450px;
+}
+.modal .dialog-tutorial .nav p {
+  display: inline-block;
+  width: 50%;
+}
+.modal .dialog-tutorial .nav p .nav-item {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.modal .dialog-tutorial .nav p .nav-item:hover {
+  color: #FF461F;
+}
+.modal .dialog-tutorial .nav .next {
+  float: right;
+  text-align: right;
+}
+.modal .dialog-loading {
+  border: none;
+  background-color: #ffffff;
+}
+.modal .dialog-loading ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 500px;
+  overflow: auto;
+}
+.modal .dialog-loading .file-upload-progress {
+  padding: 10px;
+}
+.modal .dialog-loading .file-upload-progress .file-info .file-name {
+  font-size: 14px;
+}
+.modal .dialog-loading .file-upload-progress .file-info .percent {
+  float: right;
+}
+.modal .dialog-loading .file-upload-progress .progress-bar {
+  text-align: left;
+}
+.modal .dialog-loading .file-upload-progress .progress-bar .bar {
+  display: inline-block;
+  height: 1px;
+  line-height: 1px;
+  background-color: #41C7D6;
+  transition: width .1s;
+}
+.modal .dialog-loading .file-upload-progress .progress-bar .percent-info {
+  text-align: center;
+}
+.modal .dialog-package .btn-container {
+  text-align: right;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  overflow: hidden;
+}
+@media only screen and (min-device-width: 1280px) {
+  /*------start custom scrollbar for webkit browser--------*/
+  ::-webkit-scrollbar {
+    width: 8px;
+    /* for vertical scrollbars */
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-corner {
+    background: none;
+  }
+}
+body {
+  font-size: 100%;
+  font-family: "Segoe UI", "Microsoft YaHei", "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", sans-serif;
+}
+/* prevent user select text */
+.no-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.prototype-page .screen {
+  position: absolute;
+  margin: auto;
+}
+.prototype-page .screen.top {
+  z-index: 3;
+}
+.prototype-page .screen.bottom {
+  z-index: 2;
+}
+.prototype-page .screen.middle {
+  z-index: 1;
+}
+.prototype-page .screen .link-area {
+  z-index: 4;
+}
+.prototype-page .screen .page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.prototype-page .screen .page img {
+  float: left;
+}
+.prototype-page .screen .link-area {
+  z-index: 1;
+  position: absolute;
+}
+.prototype-page .screen .link-area .link {
+  position: absolute;
+}
+.stage-container {
+  position: relative;
+}
+.stage-container .prototype-page {
+  position: absolute;
+}
+.stage-container .stage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.stage-container .animating {
+  overflow-y: hidden !important;
+}
+.stage-container.light-stage-container {
+  background-color: #FFF;
+}
+.stage-container.light-stage-container .page-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.page-title {
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  height: 30px;
+}
+.page-title h3 {
+  margin: 0;
+  padding: 0 3px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.page-title .load-event {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 30px;
+  padding: 0 5px;
+  overflow: visible;
+  background-color: #fff;
+}
+.page-title .load-event.setting {
+  color: #f00;
+}
+.link-map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  z-index: 201;
+}
+.link-map .link-map-header {
+  height: 36px;
+  border-bottom: 1px solid #41C7D6;
+  box-sizing: border-box;
+  line-height: 36px;
+  background-color: #FFF;
+}
+.link-map .link-map-header .options {
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+.link-map .link-map-header .options .close {
+  cursor: pointer;
+}
+.link-map .link-map-header .options .close .icon {
+  float: left;
+}
+.link-map .link-map-header .options .option-show-all-links {
+  margin-left: 20px;
+}
+.link-map .link-map-header .app-name {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.link-map .link-map-header .app-name span {
+  font-size: 14px;
+}
+.link-map canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.link-map .page-list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.link-map .page-list li {
+  overflow: hidden;
+  float: left;
+}
+.link-map .page-list li .page-title {
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  height: 30px;
+}
+.link-map .page-list li .prototype-page {
+  position: relative;
+  margin: auto;
+  background: #fff;
+}
+.like-a-link {
+  color: #FF461F;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.like-a-link-black {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.like-a-link-black:hover {
+  color: #FF461F;
+}
+.normal-link {
+  color: #333;
+}
+.normal-link:hover {
+  color: #FF461F;
+}
+.btn {
+  height: 30px;
+  position: relative;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+.btn.btn-primary {
+  width: 100px;
+  margin-right: 10px;
+  color: #1A1A1A;
+  background-color: #FACF4E;
+}
+.btn.btn-primary:hover {
+  background-color: #F9C526;
+}
+.btn.btn-primary:active {
+  background-color: #E2AB05;
+}
+.btn.btn-primary:disabled {
+  color: #808080;
+  background-color: #FACF4E;
+}
+.btn.btn-secondary {
+  width: 100px;
+  color: #1A1A1A;
+  background-color: #DDD;
+}
+.btn.btn-secondary:hover {
+  background-color: #CCC;
+}
+.btn.btn-secondary:active {
+  background-color: #BBB;
+}
+.btn.btn-secondary:disabled {
+  color: #999;
+  background-color: #DDD;
+}
+.btn.btn-login {
+  width: 120px;
+  color: #1A1A1A;
+  background-color: #FACF4E;
+}
+.btn.btn-register {
+  width: 120px;
+  color: #FFF;
+  background-color: #41C7D6;
+}
+.center-in-screen {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+#wrapper {
+  font-size: 14px;
+}
+.clear-fix {
+  clear: both;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+label,
+a {
+  font-size: 14px;
+  font-weight: normal;
+}
+select {
+  outline: none;
+}
+.warning {
+  background-color: #F7CF4E;
+  color: #000;
+  padding: 3px;
+}
+.page-list li {
+  display: inline-block;
+  margin-right: 160px;
+  margin-bottom: 160px;
+}
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon.icon-fade {
+  width: 14px;
+  height: 14px;
+  background: url(/imgs/icon/fade.png) no-repeat;
+  position: relative;
+  top: 3px;
+}
+.icon.icon-help {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.icon.icon-help:hover {
+  background-color: #D9D9D9;
+}
+.icon.icon-close {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-image: url("/imgs/icon/delete.png");
+  background-size: 12px 12px;
+}
+.icon.icon-close:hover {
+  background-color: #D9D9D9;
+}
+.icon.icon-close-white {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-image: url("/imgs/icon/delete_white.png");
+  background-size: 12px 12px;
+}
+.icon.icon-delete {
+  background-image: url("/imgs/icon/delete.png");
+  background-size: 12px 12px;
+  width: 16px;
+  height: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 4px;
+}
+.icon.fixed-to-top-right {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.custom-component.custom-component-checkbox.disabled {
+  pointer-events: none;
+}
+.custom-component.custom-component-checkbox.disabled .rect {
+  background-color: #AAA;
+}
+.custom-component.custom-component-checkbox .rect {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  border: 1px solid #000;
+  background-color: #FFF;
+  margin-right: 3px;
+  margin-top: 2px;
+  box-sizing: border-box;
+}
+.custom-component.custom-component-checkbox .rect i {
+  color: #000;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+  position: relative;
+  left: 2px;
+  display: inline-block;
+  width: 7px;
+  height: 5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 3px;
+}
+.custom-component.custom-component-radio.checked:before {
+  background-color: #000;
+}
+.custom-component.custom-component-radio:before {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .icon.icon-delete,
+  .icon.icon-close {
+    background-image: url("/imgs/icon/delete@2x.png");
+  }
+  .icon.icon-close-white {
+    background-image: url("/imgs/icon/delete_white@2x.png");
+  }
+}
+.animation-stage-container {
+  position: relative;
+  overflow: hidden;
+}
+.animation-stage-container .stage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.animation-stage-container .stage .one,
+.animation-stage-container .stage .two {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.animation-stage-container .stage .one {
+  z-index: 1;
+}
+.animation-stage-container .stage .two {
+  z-index: 0;
+}
+.ScrollView {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+.ScrollView .track {
+  position: absolute;
+  width: 8px;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.ScrollView .track .thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 6px;
+  left: 1px;
+  border-radius: 3px;
+  z-index: 1;
+  transition: opacity 1s;
+}
+.ScrollView .track .thumb.hide {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.ScrollView .track .thumb:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.ScrollView .track .thumb:active,
+.ScrollView .track .thumb:focus {
+  cursor: default;
+}
+.ScrollView .scroller {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: -20px;
+}
+.ScrollView.disabled .scroller {
+  overflow-y: hidden;
+}
+.native-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+@-webkit-keyframes link-flash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes link-flash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes link-flash-2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes link-flash-2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (max-device-width: 1080px) {
+  .preview-panel {
+    display: none;
+  }
+  .shell {
+    display: none;
+  }
+  #wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  #wrapper .splash-screen {
+    width: 100%;
+    height: 100%;
+  }
+  #wrapper .splash-screen .logo {
+    width: 64px;
+    height: 64px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+  }
+  #wrapper .splash-screen .logo img {
+    width: 100%;
+  }
+}
+@-webkit-keyframes tree-show {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    opacity: 0.9;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes tree-show {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    opacity: 0.9;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+#wrapper {
+  height: 100%;
+}
+#wrapper > div {
+  width: 100%;
+  height: 100%;
+}
+#wrapper .preview {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  background-color: #404040;
+}
+#wrapper .preview .link .gesture {
+  display: none;
+}
+#wrapper .preview .link {
+  cursor: pointer;
+}
+#wrapper .preview.show-link-hint .flash-link .link {
+  -webkit-animation: link-flash 1s;
+          animation: link-flash 1s;
+  background-color: rgba(255, 70, 31, 0.3);
+  border: 1px solid #FF461F;
+  opacity: 0;
+}
+#wrapper .preview.show-link-hint .flash-link .link .gesture {
+  display: block;
+}
+#wrapper .preview.only-show-action .flash-link .link .gesture {
+  display: block;
+}
+#wrapper .preview.pc-preview.always-show-link .link {
+  -webkit-animation: link-flash-2 1s;
+          animation: link-flash-2 1s;
+  background-color: rgba(255, 70, 31, 0.3);
+  border: 1px solid #FF461F;
+}
+#wrapper .preview.pc-preview.always-show-link .link .gesture {
+  display: block;
+}
+#wrapper .preview.pc-preview.hover-show-link .link:hover {
+  -webkit-animation: link-flash-2 1s;
+          animation: link-flash-2 1s;
+  background-color: rgba(255, 70, 31, 0.3);
+  border: 1px solid #FF461F;
+}
+#wrapper .preview.pc-preview.hover-show-link .link:hover .gesture {
+  display: block;
+}
+#wrapper .preview .preview-panel {
+  width: 240px;
+  height: 100%;
+  min-width: 240px;
+  color: #b0b0b0;
+  z-index: 2;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  transition: margin-left 0.5s;
+  padding: 10px 0;
+}
+#wrapper .preview .preview-panel .top {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+#wrapper .preview .preview-panel .top .header {
+  padding: 5px 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+#wrapper .preview .preview-panel .top .header .logo {
+  margin-right: 10px;
+}
+#wrapper .preview .preview-panel .top .header .info {
+  overflow: hidden;
+}
+#wrapper .preview .preview-panel .top .header .info h2 {
+  word-wrap: break-word;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#wrapper .preview .preview-panel .top .header .info p {
+  line-height: 1.4em;
+  margin: 5px 0;
+}
+#wrapper .preview .preview-panel .top .preview-options {
+  padding: 5px 10px;
+}
+#wrapper .preview .preview-panel .top .preview-options .option {
+  margin: 5px 0;
+}
+#wrapper .preview .preview-panel .top .preview-options .option label {
+  margin-left: 3px;
+}
+#wrapper .preview .preview-panel .top .preview-options .show-link-map {
+  cursor: pointer;
+}
+#wrapper .preview .preview-panel .top .preview-options .show-link-map i {
+  margin-right: 5px;
+}
+#wrapper .preview .preview-panel .top .qr-code {
+  padding: 5px 10px;
+}
+#wrapper .preview .preview-panel .top .qr-code p {
+  line-height: 16px;
+  margin: 5px 0;
+}
+#wrapper .preview .preview-panel .top .qr-code .desc {
+  line-height: 12px;
+  margin: 5px 0;
+}
+#wrapper .preview .preview-panel .pages {
+  padding: 5px 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+#wrapper .preview .preview-panel .pages h4 {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin: 0;
+}
+#wrapper .preview .preview-panel .pages .tree {
+  overflow: auto;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+}
+#wrapper .preview .preview-panel .pages .tree ul {
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+#wrapper .preview .preview-panel .pages .tree ul li {
+  line-height: 1.6em;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#wrapper .preview .preview-panel .pages .tree ul li:hover,
+#wrapper .preview .preview-panel .pages .tree ul .current {
+  color: #FF461F;
+  text-decoration: underline;
+}
+#wrapper .preview .preview-panel .switch {
+  height: 100px;
+  width: 20px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(60, 60, 60, 0.4);
+  cursor: pointer;
+}
+#wrapper .preview .preview-panel .switch:hover {
+  background-color: rgba(60, 60, 60, 0.6);
+}
+#wrapper .preview .preview-panel .switch > span {
+  color: #fff;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none;
+}
+#wrapper .preview .preview-panel .switch.show .left {
+  display: inline-block;
+}
+#wrapper .preview .preview-panel .switch.show .left i {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-left: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+#wrapper .preview .preview-panel .switch.hide .right {
+  display: inline-block;
+}
+#wrapper .preview .preview-panel .switch.hide .right i {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-left: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+#wrapper .preview .preview-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: auto;
+  background-color: #444;
+}
+#wrapper .preview .preview-container .scroll-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+#wrapper .preview .preview-container .scroll-view .device {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+#wrapper .preview .preview-container .scroll-view .device .shell {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+#wrapper .preview .preview-container .scroll-view .device .shell svg {
+  float: left;
+}
+#wrapper .preview .preview-container .scroll-view .device .shell img {
+  width: auto;
+  height: auto;
+}
+#wrapper .preview .preview-container .scroll-view .device .shell .shell-whole {
+  width: 100%;
+  height: 100%;
+  display: block;
+  float: left;
+}
+#wrapper .preview .preview-container .scroll-view .device .shell .shell-top,
+#wrapper .preview .preview-container .scroll-view .device .shell .shell-home {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#wrapper .preview .preview-container .scroll-view .device .shell .shell-top {
+  top: 0;
+}
+#wrapper .preview .preview-container .scroll-view .device .shell .shell-home {
+  bottom: 0;
+  cursor: pointer;
+}
+#wrapper .preview .preview-container .scroll-view .device .shell .screen-placeholder {
+  background-color: #ffffff;
+  position: absolute;
+}
+#wrapper .preview .preview-container .scroll-view .device .shell.horizontal .shell-top,
+#wrapper .preview .preview-container .scroll-view .device .shell.horizontal .shell-home {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+#wrapper .preview .preview-container .scroll-view .device .shell.horizontal .shell-top {
+  left: 0;
+}
+#wrapper .preview .preview-container .scroll-view .device .shell.horizontal .shell-home {
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+#wrapper .preview .preview-container .scroll-view .device .stage-container {
+  position: absolute;
+}
+#wrapper .preview .preview-container .scroll-view .device .horizontal .top,
+#wrapper .preview .preview-container .scroll-view .device .horizontal .home {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+#wrapper .preview .preview-container .scroll-view .device .horizontal .top {
+  left: 0;
+}
+#wrapper .preview .preview-container .scroll-view .device .horizontal .home {
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+#wrapper .preview .exit-preview {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+#wrapper .preview .powered-by-chainco {
+  position: absolute;
+  background-color: #404040;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 20px;
+  z-index: 1;
+  cursor: pointer;
+  color: #C0C0C0;
+}
+#wrapper .preview .powered-by-chainco .chainco {
+  margin: 0;
+  font-size: 24px;
+}
+.main-stage-container {
+  background-color: #FFF;
+}
+.main-stage-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main-stage-container ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: none;
+}
+#wrapper > div {
+  width: 100%;
+  height: 100%;
+}
+#wrapper .mobile-preview {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes dance-up-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+@keyframes dance-up-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+.ios-warning {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ios-warning .content {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.ios-warning .content .header {
+  margin-bottom: 20px;
+}
+.ios-warning .content .header h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+.ios-warning .content .header:after {
+  content: '';
+  display: inline-block;
+  width: 80%;
+  height: 1px;
+  background-color: #ddd;
+}
+.ios-warning .content .how-to-install {
+  font-size: 1em;
+}
+.ios-warning .content .how-to-install h3 {
+  font-size: 1.2em;
+  color: #aaa;
+  margin: 0;
+}
+.ios-warning .content .how-to-install .open-now {
+  padding: 30px;
+  color: #666;
+}
+.ios-warning .content .how-to-install .open-now a {
+  color: #333;
+}
+.ios-warning .arrow {
+  width: 100%;
+  position: fixed;
+}
+.ios-warning .arrow img {
+  display: none;
+  -webkit-animation: 0.8s dance-up-down;
+          animation: 0.8s dance-up-down;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.ios-warning .arrow.top-right {
+  top: 0;
+}
+.ios-warning .arrow.top-right .top-right-arrow {
+  display: inline;
+  position: absolute;
+  right: 0;
+}
+.ios-warning .arrow.bottom-center {
+  bottom: 0;
+  text-align: center;
+}
+.ios-warning .arrow.bottom-center .bottom-center-arrow {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=preview.css.map */
